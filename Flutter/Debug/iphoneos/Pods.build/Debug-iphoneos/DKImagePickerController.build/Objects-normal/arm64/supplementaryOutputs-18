@@ -1,0 +1,15 @@
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailBaseCell.swift":
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupDetailBaseCell.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupDetailBaseCell.o"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupDetailBaseCell.d"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupDetailBaseCell.swiftdeps"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAssetGroup.swift":
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroup.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroup.o"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroup.d"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroup.swiftdeps"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupCellItemProtocol.swiftdeps"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupCellItemProtocol.d"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupCellItemProtocol.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKAssetGroupCellItemProtocol.o"

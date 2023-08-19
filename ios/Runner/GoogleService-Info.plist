@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB4w55OAd9SDZBUspVZlo8eytWG8AY7EN4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1047764427243</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.powerkidsapp</string>
+	<key>PROJECT_ID</key>
+	<string>powerkids-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>powerkids-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1047764427243:ios:0ee399e29f1a364f61f9ae</string>
+</dict>
+</plist>

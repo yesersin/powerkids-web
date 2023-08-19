@@ -1,0 +1,15 @@
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/Resource/DKImagePickerControllerResource.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.swiftdeps"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.d"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.o"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerResource.dia"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerController.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.swiftdeps"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.o"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerController.d"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerControllerBaseUIDelegate.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.swiftdeps"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.dia"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.d"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKImagePickerController.build/Objects-normal/arm64/DKImagePickerControllerBaseUIDelegate.o"

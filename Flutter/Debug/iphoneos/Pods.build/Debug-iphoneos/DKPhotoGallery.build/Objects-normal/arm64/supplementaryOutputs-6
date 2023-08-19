@@ -1,0 +1,15 @@
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/Preview/PDFPreview/DKPhotoPDFPreviewVC.swift":
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPDFPreviewVC.o"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPDFPreviewVC.d"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPDFPreviewVC.swiftdeps"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPDFPreviewVC.dia"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoIncrementalIndicator.swift":
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoIncrementalIndicator.d"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoIncrementalIndicator.dia"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoIncrementalIndicator.swiftdeps"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoIncrementalIndicator.o"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/Preview/PlayerPreview/DKPhotoPlayerPreviewVC.swift":
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPlayerPreviewVC.o"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPlayerPreviewVC.swiftdeps"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPlayerPreviewVC.d"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoPlayerPreviewVC.dia"

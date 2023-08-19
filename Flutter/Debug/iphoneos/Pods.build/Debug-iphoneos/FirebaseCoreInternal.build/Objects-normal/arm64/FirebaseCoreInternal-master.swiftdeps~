@@ -1,0 +1,24 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "78a5d2e47037d610f967bb1acfc24f17c33df4ddc305e48db31c162cac5a9b3b"
+build_start_time: [1680699653, 833692000]
+build_end_time: [1680699654, 8751000]
+inputs:
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift": !private [1680697539, 120551043]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : !private [1680697539, 121633780]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : !private [1680697539, 122420189]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : !private [1680697539, 122754086]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : !private [1680697539, 123342490]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift": !private [1680697539, 120896631]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift": !private [1680697539, 120088512]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift"
+  : !private [1680697539, 123633961]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift"
+  : !private [1680697539, 123048336]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : !private [1680697539, 121275468]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : !private [1680697539, 122078350]

@@ -1,0 +1,1 @@
+void loadMessages() async {}

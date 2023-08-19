@@ -1,0 +1,20 @@
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoGalleryContentVC.swift":
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryContentVC.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryContentVC.o"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryContentVC.d"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryContentVC.swiftdeps"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/Transition/DKPhotoGalleryInteractiveTransition.swift":
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryInteractiveTransition.d"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryInteractiveTransition.dia"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryInteractiveTransition.o"
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryInteractiveTransition.swiftdeps"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoGallery.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGallery.swiftdeps"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGallery.d"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGallery.o"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGallery.dia"
+"/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoGalleryItem.swift":
+  swift-dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryItem.swiftdeps"
+  object: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryItem.o"
+  diagnostics: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryItem.dia"
+  dependencies: "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/Objects-normal/arm64/DKPhotoGalleryItem.d"

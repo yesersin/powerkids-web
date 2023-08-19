@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "17cd2075cdd81a56e4cee9c9069c1389dfe6f66378be28bb2a5efa9363eddfe7"
+build_start_time: [1680699586, 244087000]
+build_end_time: [1680699586, 493579000]
+inputs:
+  "/Users/yesersin/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audio_waveforms-0.1.5+1/ios/Classes/AudioPlayer.swift": !private [1667285841, 196098330]
+  "/Users/yesersin/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audio_waveforms-0.1.5+1/ios/Classes/AudioRecorder.swift": !private [1667285841, 194437301]
+  "/Users/yesersin/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audio_waveforms-0.1.5+1/ios/Classes/Constants.swift": !private [1667285841, 196412635]
+  ? "/Users/yesersin/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audio_waveforms-0.1.5+1/ios/Classes/SwiftAudioWaveformsPlugin.swift"
+  : !private [1667285841, 194796373]
+  "/Users/yesersin/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/audio_waveforms-0.1.5+1/ios/Classes/Utils.swift": !private [1667285841, 195142624]

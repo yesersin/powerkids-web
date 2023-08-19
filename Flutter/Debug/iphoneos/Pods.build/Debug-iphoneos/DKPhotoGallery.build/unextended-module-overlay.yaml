@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Debug-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Debug-iphoneos/DKPhotoGallery/DKPhotoGallery.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "DKPhotoGallery-Swift.h",
+      'external-contents': "/Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/DKPhotoGallery.build/unextended-interface-header.h",
+    }]
+    }]
+}

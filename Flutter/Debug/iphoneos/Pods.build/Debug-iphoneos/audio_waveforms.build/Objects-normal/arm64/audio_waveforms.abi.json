@@ -1,0 +1,5496 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioPlayer",
+        "printedName": "AudioPlayer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "seekToStart",
+            "printedName": "seekToStart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC11seekToStart33_377A868379A257F525E5B8352CD4EC45LLSbvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC11seekToStart33_377A868379A257F525E5B8352CD4EC45LLSbvp",
+            "moduleName": "audio_waveforms",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "stopWhenCompleted",
+            "printedName": "stopWhenCompleted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC17stopWhenCompleted33_377A868379A257F525E5B8352CD4EC45LLSbvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC17stopWhenCompleted33_377A868379A257F525E5B8352CD4EC45LLSbvp",
+            "moduleName": "audio_waveforms",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "timer",
+            "printedName": "timer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Timer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timer",
+                    "printedName": "Foundation.Timer",
+                    "usr": "c:objc(cs)NSTimer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC5timer33_377A868379A257F525E5B8352CD4EC45LLSo7NSTimerCSgvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC5timer33_377A868379A257F525E5B8352CD4EC45LLSo7NSTimerCSgvp",
+            "moduleName": "audio_waveforms",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "player",
+            "printedName": "player",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFAudio.AVAudioPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAudioPlayer",
+                    "printedName": "AVFAudio.AVAudioPlayer",
+                    "usr": "c:objc(cs)AVAudioPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC6player33_377A868379A257F525E5B8352CD4EC45LLSo07AVAudioD0CSgvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC6player33_377A868379A257F525E5B8352CD4EC45LLSo07AVAudioD0CSgvp",
+            "moduleName": "audio_waveforms",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "finishMode",
+            "printedName": "finishMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FinishMode",
+                "printedName": "audio_waveforms.FinishMode",
+                "usr": "s:15audio_waveforms10FinishModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC10finishMode33_377A868379A257F525E5B8352CD4EC45LLAA06FinishF0Ovp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC10finishMode33_377A868379A257F525E5B8352CD4EC45LLAA06FinishF0Ovp",
+            "moduleName": "audio_waveforms",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "plugin",
+            "printedName": "plugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftAudioWaveformsPlugin",
+                "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SwiftAudioWaveformsPlugin",
+                    "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                    "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvg",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SwiftAudioWaveformsPlugin",
+                    "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                    "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvs",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvM",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC6pluginAA05SwiftC15WaveformsPluginCvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "playerKey",
+            "printedName": "playerKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms11AudioPlayerC9playerKeySSvp",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC9playerKeySSvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 6,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC9playerKeySSvg",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC9playerKeySSvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC9playerKeySSvs",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC9playerKeySSvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms11AudioPlayerC9playerKeySSvM",
+                "mangledName": "$s15audio_waveforms11AudioPlayerC9playerKeySSvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(plugin:playerKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioPlayer",
+                "printedName": "audio_waveforms.AudioPlayer",
+                "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftAudioWaveformsPlugin",
+                "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15audio_waveforms11AudioPlayerC6plugin9playerKeyAcA05SwiftC15WaveformsPluginC_SStcfc",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC6plugin9playerKeyAcA05SwiftC15WaveformsPluginC_SStcfc",
+            "moduleName": "audio_waveforms",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "preparePlayer",
+            "printedName": "preparePlayer(path:volume:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC07prepareD04path6volume6resultySSSg_SdSgyypSgctF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC07prepareD04path6volume6resultySSSg_SdSgyypSgctF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioPlayerDidFinishPlaying",
+            "printedName": "audioPlayerDidFinishPlaying(_:successfully:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioPlayer",
+                "printedName": "AVFAudio.AVAudioPlayer",
+                "usr": "c:objc(cs)AVAudioPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer(im)audioPlayerDidFinishPlaying:successfully:",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC0aD16DidFinishPlaying_12successfullyySo07AVAudioD0C_SbtF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "objc_name": "audioPlayerDidFinishPlaying:successfully:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPlyer",
+            "printedName": "startPlyer(result:finishMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC10startPlyer6result10finishModeyyypSgc_SiSgtF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC10startPlyer6result10finishModeyyypSgc_SiSgtF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pausePlayer",
+            "printedName": "pausePlayer(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC05pauseD06resultyyypSgc_tF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC05pauseD06resultyyypSgc_tF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPlayer",
+            "printedName": "stopPlayer(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC04stopD06resultyyypSgc_tF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC04stopD06resultyyypSgc_tF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDuration",
+            "printedName": "getDuration(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DurationType",
+                "printedName": "audio_waveforms.DurationType",
+                "usr": "s:15audio_waveforms12DurationTypeO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC11getDurationyyAA0F4TypeO_yypSgctKF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC11getDurationyyAA0F4TypeO_yypSgctKF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVolume",
+            "printedName": "setVolume(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC9setVolumeyySdSg_yypSgctF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC9setVolumeyySdSg_yypSgctF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seekTo",
+            "printedName": "seekTo(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC6seekToyySiSg_yypSgctF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC6seekToyySiSg_yypSgctF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startListening",
+            "printedName": "startListening()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC14startListeningyyF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC14startListeningyyF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopListening",
+            "printedName": "stopListening()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms11AudioPlayerC13stopListeningyyF",
+            "mangledName": "$s15audio_waveforms11AudioPlayerC13stopListeningyyF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioPlayer",
+                "printedName": "audio_waveforms.AudioPlayer",
+                "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer(im)init",
+            "mangledName": "$s15audio_waveforms11AudioPlayerCACycfc",
+            "moduleName": "audio_waveforms",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer",
+        "mangledName": "$s15audio_waveforms11AudioPlayerC",
+        "moduleName": "audio_waveforms",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioRecorder",
+        "printedName": "AudioRecorder",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioRecorder",
+            "printedName": "audioRecorder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFAudio.AVAudioRecorder?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAudioRecorder",
+                    "printedName": "AVFAudio.AVAudioRecorder",
+                    "usr": "c:objc(cs)AVAudioRecorder"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvp",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFAudio.AVAudioRecorder?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAudioRecorder",
+                        "printedName": "AVFAudio.AVAudioRecorder",
+                        "usr": "c:objc(cs)AVAudioRecorder"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvg",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFAudio.AVAudioRecorder?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAudioRecorder",
+                        "printedName": "AVFAudio.AVAudioRecorder",
+                        "usr": "c:objc(cs)AVAudioRecorder"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvs",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvM",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC0aD0So07AVAudioD0CSgvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms13AudioRecorderC4pathSSSgvp",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC4pathSSSgvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC4pathSSSgvg",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC4pathSSSgvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC4pathSSSgvs",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC4pathSSSgvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC4pathSSSgvM",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC4pathSSSgvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasPermission",
+            "printedName": "hasPermission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms13AudioRecorderC13hasPermissionSbvp",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC13hasPermissionSbvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC13hasPermissionSbvg",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC13hasPermissionSbvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC13hasPermissionSbvs",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC13hasPermissionSbvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC13hasPermissionSbvM",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC13hasPermissionSbvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "meteringLevels",
+            "printedName": "meteringLevels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvp",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.Float]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Float]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvg",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.Float]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Float]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvs",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvM",
+                "mangledName": "$s15audio_waveforms13AudioRecorderC14meteringLevelsSaySfGSgvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startRecording",
+            "printedName": "startRecording(_:_:_:_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC14startRecordingyyyypSgc_SSSgSiSgA2GSStF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC14startRecordingyyyypSgc_SSSgSiSgA2GSStF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecording",
+            "printedName": "stopRecording(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC13stopRecordingyyyypSgcF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC13stopRecordingyyyypSgcF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseRecording",
+            "printedName": "pauseRecording(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC14pauseRecordingyyyypSgcF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC14pauseRecordingyyyypSgcF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeRecording",
+            "printedName": "resumeRecording(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC15resumeRecordingyyyypSgcF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC15resumeRecordingyyyypSgcF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDecibel",
+            "printedName": "getDecibel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC10getDecibelyyyypSgcF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC10getDecibelyyyypSgcF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkHasPermission",
+            "printedName": "checkHasPermission(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC18checkHasPermissionyyyypSgcF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC18checkHasPermissionyyyypSgcF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEncoder",
+            "printedName": "getEncoder(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms13AudioRecorderC10getEncoderyS2iF",
+            "mangledName": "$s15audio_waveforms13AudioRecorderC10getEncoderyS2iF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioRecorder",
+                "printedName": "audio_waveforms.AudioRecorder",
+                "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder(im)init",
+            "mangledName": "$s15audio_waveforms13AudioRecorderCACycfc",
+            "moduleName": "audio_waveforms",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder",
+        "mangledName": "$s15audio_waveforms13AudioRecorderC",
+        "moduleName": "audio_waveforms",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "audio_waveforms"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftAudioWaveformsPlugin",
+        "printedName": "SwiftAudioWaveformsPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioRecorder",
+            "printedName": "audioRecorder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioRecorder",
+                "printedName": "audio_waveforms.AudioRecorder",
+                "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvp",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvp",
+            "moduleName": "audio_waveforms",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioRecorder",
+                    "printedName": "audio_waveforms.AudioRecorder",
+                    "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvg",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioRecorder",
+                    "printedName": "audio_waveforms.AudioRecorder",
+                    "usr": "c:@M@audio_waveforms@objc(cs)AudioRecorder"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvs",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0Cvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0CvM",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A8RecorderAA0dG0CvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "audioPlayers",
+            "printedName": "audioPlayers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : audio_waveforms.AudioPlayer]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioPlayer",
+                    "printedName": "audio_waveforms.AudioPlayer",
+                    "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvp",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : audio_waveforms.AudioPlayer]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioPlayer",
+                        "printedName": "audio_waveforms.AudioPlayer",
+                        "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvg",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : audio_waveforms.AudioPlayer]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioPlayer",
+                        "printedName": "audio_waveforms.AudioPlayer",
+                        "usr": "c:@M@audio_waveforms@objc(cs)AudioPlayer"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvs",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvM",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC0A7PlayersSDySSAA0D6PlayerCGvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flutterChannel",
+            "printedName": "flutterChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodChannel",
+                "printedName": "Flutter.FlutterMethodChannel",
+                "usr": "c:objc(cs)FlutterMethodChannel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvp",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvp",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterMethodChannel",
+                    "printedName": "Flutter.FlutterMethodChannel",
+                    "usr": "c:objc(cs)FlutterMethodChannel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvg",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlutterMethodChannel",
+                    "printedName": "Flutter.FlutterMethodChannel",
+                    "usr": "c:objc(cs)FlutterMethodChannel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvs",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0Cvs",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0CvM",
+                "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC14flutterChannelSo013FlutterMethodH0CvM",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(registrar:flutterChannel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftAudioWaveformsPlugin",
+                "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodChannel",
+                "printedName": "Flutter.FlutterMethodChannel",
+                "usr": "c:objc(cs)FlutterMethodChannel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC9registrar14flutterChannelACSo07FlutterF9Registrar_p_So0j6MethodI0Ctcfc",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC9registrar14flutterChannelACSo07FlutterF9Registrar_p_So0j6MethodI0Ctcfc",
+            "moduleName": "audio_waveforms",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin(im)handleMethodCall:result:",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initPlayer",
+            "printedName": "initPlayer(playerKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC10initPlayer9playerKeyySS_tF",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC10initPlayer9playerKeyySS_tF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCurrentDuration",
+            "printedName": "onCurrentDuration(duration:playerKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms25SwiftAudioWaveformsPluginC17onCurrentDuration8duration9playerKeyySi_SStF",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC17onCurrentDuration8duration9playerKeyySi_SStF",
+            "moduleName": "audio_waveforms",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftAudioWaveformsPlugin",
+                "printedName": "audio_waveforms.SwiftAudioWaveformsPlugin",
+                "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin(im)init",
+            "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginCACycfc",
+            "moduleName": "audio_waveforms",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@audio_waveforms@objc(cs)SwiftAudioWaveformsPlugin",
+        "mangledName": "$s15audio_waveforms25SwiftAudioWaveformsPluginC",
+        "moduleName": "audio_waveforms",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DurationType",
+        "printedName": "DurationType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "Current",
+            "printedName": "Current",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(audio_waveforms.DurationType.Type) -> audio_waveforms.DurationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DurationType",
+                    "printedName": "audio_waveforms.DurationType",
+                    "usr": "s:15audio_waveforms12DurationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "audio_waveforms.DurationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DurationType",
+                        "printedName": "audio_waveforms.DurationType",
+                        "usr": "s:15audio_waveforms12DurationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15audio_waveforms12DurationTypeO7CurrentyA2CmF",
+            "mangledName": "$s15audio_waveforms12DurationTypeO7CurrentyA2CmF",
+            "moduleName": "audio_waveforms",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "Max",
+            "printedName": "Max",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(audio_waveforms.DurationType.Type) -> audio_waveforms.DurationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DurationType",
+                    "printedName": "audio_waveforms.DurationType",
+                    "usr": "s:15audio_waveforms12DurationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "audio_waveforms.DurationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DurationType",
+                        "printedName": "audio_waveforms.DurationType",
+                        "usr": "s:15audio_waveforms12DurationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15audio_waveforms12DurationTypeO3MaxyA2CmF",
+            "mangledName": "$s15audio_waveforms12DurationTypeO3MaxyA2CmF",
+            "moduleName": "audio_waveforms",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DurationType",
+                "printedName": "audio_waveforms.DurationType",
+                "usr": "s:15audio_waveforms12DurationTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DurationType",
+                "printedName": "audio_waveforms.DurationType",
+                "usr": "s:15audio_waveforms12DurationTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms12DurationTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15audio_waveforms12DurationTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms12DurationTypeO9hashValueSivp",
+            "mangledName": "$s15audio_waveforms12DurationTypeO9hashValueSivp",
+            "moduleName": "audio_waveforms",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms12DurationTypeO9hashValueSivg",
+                "mangledName": "$s15audio_waveforms12DurationTypeO9hashValueSivg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15audio_waveforms12DurationTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15audio_waveforms12DurationTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "audio_waveforms",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15audio_waveforms12DurationTypeO",
+        "mangledName": "$s15audio_waveforms12DurationTypeO",
+        "moduleName": "audio_waveforms",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "methodChannelName",
+            "printedName": "methodChannelName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV17methodChannelNameSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV17methodChannelNameSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV17methodChannelNameSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV17methodChannelNameSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "audioWaveforms",
+            "printedName": "audioWaveforms",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV0A9WaveformsSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV0A9WaveformsSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV0A9WaveformsSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV0A9WaveformsSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startRecording",
+            "printedName": "startRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV14startRecordingSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV14startRecordingSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV14startRecordingSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV14startRecordingSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pauseRecording",
+            "printedName": "pauseRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV14pauseRecordingSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV14pauseRecordingSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV14pauseRecordingSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV14pauseRecordingSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stopRecording",
+            "printedName": "stopRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV13stopRecordingSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV13stopRecordingSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV13stopRecordingSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV13stopRecordingSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "getDecibel",
+            "printedName": "getDecibel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV10getDecibelSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV10getDecibelSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV10getDecibelSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV10getDecibelSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkPermission",
+            "printedName": "checkPermission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV15checkPermissionSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV15checkPermissionSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV15checkPermissionSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV15checkPermissionSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV4pathSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV4pathSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV4pathSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV4pathSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "encoder",
+            "printedName": "encoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV7encoderSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV7encoderSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV7encoderSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV7encoderSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sampleRate",
+            "printedName": "sampleRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV10sampleRateSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV10sampleRateSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV10sampleRateSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV10sampleRateSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bitRate",
+            "printedName": "bitRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV7bitRateSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV7bitRateSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV7bitRateSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV7bitRateSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileNameFormat",
+            "printedName": "fileNameFormat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV14fileNameFormatSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV14fileNameFormatSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV14fileNameFormatSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV14fileNameFormatSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resumeRecording",
+            "printedName": "resumeRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV15resumeRecordingSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV15resumeRecordingSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV15resumeRecordingSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV15resumeRecordingSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEG4AAC",
+            "printedName": "kAudioFormatMPEG4AAC",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV20kAudioFormatMPEG4AACSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV20kAudioFormatMPEG4AACSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV20kAudioFormatMPEG4AACSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV20kAudioFormatMPEG4AACSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEGLayer1",
+            "printedName": "kAudioFormatMPEGLayer1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer1SivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer1SivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer1SivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer1SivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEGLayer2",
+            "printedName": "kAudioFormatMPEGLayer2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer2SivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer2SivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer2SivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer2SivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEGLayer3",
+            "printedName": "kAudioFormatMPEGLayer3",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer3SivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer3SivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer3SivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV22kAudioFormatMPEGLayer3SivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEG4AAC_ELD",
+            "printedName": "kAudioFormatMPEG4AAC_ELD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV24kAudioFormatMPEG4AAC_ELDSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV24kAudioFormatMPEG4AAC_ELDSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV24kAudioFormatMPEG4AAC_ELDSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV24kAudioFormatMPEG4AAC_ELDSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEG4AAC_HE",
+            "printedName": "kAudioFormatMPEG4AAC_HE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV23kAudioFormatMPEG4AAC_HESivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV23kAudioFormatMPEG4AAC_HESivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV23kAudioFormatMPEG4AAC_HESivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV23kAudioFormatMPEG4AAC_HESivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatOpus",
+            "printedName": "kAudioFormatOpus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV16kAudioFormatOpusSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV16kAudioFormatOpusSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV16kAudioFormatOpusSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV16kAudioFormatOpusSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatAMR",
+            "printedName": "kAudioFormatAMR",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV15kAudioFormatAMRSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV15kAudioFormatAMRSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV15kAudioFormatAMRSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV15kAudioFormatAMRSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatAMR_WB",
+            "printedName": "kAudioFormatAMR_WB",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV18kAudioFormatAMR_WBSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV18kAudioFormatAMR_WBSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV18kAudioFormatAMR_WBSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV18kAudioFormatAMR_WBSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatLinearPCM",
+            "printedName": "kAudioFormatLinearPCM",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV21kAudioFormatLinearPCMSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV21kAudioFormatLinearPCMSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV21kAudioFormatLinearPCMSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV21kAudioFormatLinearPCMSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatAppleLossless",
+            "printedName": "kAudioFormatAppleLossless",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV25kAudioFormatAppleLosslessSivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV25kAudioFormatAppleLosslessSivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV25kAudioFormatAppleLosslessSivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV25kAudioFormatAppleLosslessSivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kAudioFormatMPEG4AAC_HE_V2",
+            "printedName": "kAudioFormatMPEG4AAC_HE_V2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV26kAudioFormatMPEG4AAC_HE_V2SivpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV26kAudioFormatMPEG4AAC_HE_V2SivpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV26kAudioFormatMPEG4AAC_HE_V2SivgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV26kAudioFormatMPEG4AAC_HE_V2SivgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "readAudioFile",
+            "printedName": "readAudioFile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV13readAudioFileSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV13readAudioFileSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV13readAudioFileSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV13readAudioFileSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "durationEventChannel",
+            "printedName": "durationEventChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV20durationEventChannelSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV20durationEventChannelSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV20durationEventChannelSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV20durationEventChannelSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startPlayer",
+            "printedName": "startPlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV11startPlayerSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV11startPlayerSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV11startPlayerSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV11startPlayerSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stopPlayer",
+            "printedName": "stopPlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV10stopPlayerSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV10stopPlayerSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV10stopPlayerSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV10stopPlayerSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pausePlayer",
+            "printedName": "pausePlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV11pausePlayerSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV11pausePlayerSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV11pausePlayerSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV11pausePlayerSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "seekTo",
+            "printedName": "seekTo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV6seekToSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV6seekToSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV6seekToSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV6seekToSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "progress",
+            "printedName": "progress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV8progressSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV8progressSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV8progressSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV8progressSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "setVolume",
+            "printedName": "setVolume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV9setVolumeSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV9setVolumeSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV9setVolumeSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV9setVolumeSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "volume",
+            "printedName": "volume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV6volumeSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV6volumeSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV6volumeSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV6volumeSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "getDuration",
+            "printedName": "getDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV11getDurationSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV11getDurationSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV11getDurationSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV11getDurationSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "durationType",
+            "printedName": "durationType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV12durationTypeSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV12durationTypeSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV12durationTypeSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV12durationTypeSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preparePlayer",
+            "printedName": "preparePlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV13preparePlayerSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV13preparePlayerSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV13preparePlayerSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV13preparePlayerSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onCurrentDuration",
+            "printedName": "onCurrentDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV17onCurrentDurationSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV17onCurrentDurationSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV17onCurrentDurationSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV17onCurrentDurationSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "current",
+            "printedName": "current",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV7currentSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV7currentSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV7currentSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV7currentSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "playerKey",
+            "printedName": "playerKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV9playerKeySSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV9playerKeySSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV9playerKeySSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV9playerKeySSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stopAllPlayers",
+            "printedName": "stopAllPlayers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV14stopAllPlayersSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV14stopAllPlayersSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV14stopAllPlayersSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV14stopAllPlayersSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onDidFinishPlayingAudio",
+            "printedName": "onDidFinishPlayingAudio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV23onDidFinishPlayingAudioSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV23onDidFinishPlayingAudioSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV23onDidFinishPlayingAudioSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV23onDidFinishPlayingAudioSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "finishMode",
+            "printedName": "finishMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV10finishModeSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV10finishModeSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV10finishModeSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV10finishModeSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "finishType",
+            "printedName": "finishType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms9ConstantsV10finishTypeSSvpZ",
+            "mangledName": "$s15audio_waveforms9ConstantsV10finishTypeSSvpZ",
+            "moduleName": "audio_waveforms",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms9ConstantsV10finishTypeSSvgZ",
+                "mangledName": "$s15audio_waveforms9ConstantsV10finishTypeSSvgZ",
+                "moduleName": "audio_waveforms",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Constants",
+                "printedName": "audio_waveforms.Constants",
+                "usr": "s:15audio_waveforms9ConstantsV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15audio_waveforms9ConstantsVACycfc",
+            "mangledName": "$s15audio_waveforms9ConstantsVACycfc",
+            "moduleName": "audio_waveforms",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15audio_waveforms9ConstantsV",
+        "mangledName": "$s15audio_waveforms9ConstantsV",
+        "moduleName": "audio_waveforms",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FinishMode",
+        "printedName": "FinishMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "loop",
+            "printedName": "loop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(audio_waveforms.FinishMode.Type) -> audio_waveforms.FinishMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FinishMode",
+                    "printedName": "audio_waveforms.FinishMode",
+                    "usr": "s:15audio_waveforms10FinishModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "audio_waveforms.FinishMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FinishMode",
+                        "printedName": "audio_waveforms.FinishMode",
+                        "usr": "s:15audio_waveforms10FinishModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15audio_waveforms10FinishModeO4loopyA2CmF",
+            "mangledName": "$s15audio_waveforms10FinishModeO4loopyA2CmF",
+            "moduleName": "audio_waveforms",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "pause",
+            "printedName": "pause",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(audio_waveforms.FinishMode.Type) -> audio_waveforms.FinishMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FinishMode",
+                    "printedName": "audio_waveforms.FinishMode",
+                    "usr": "s:15audio_waveforms10FinishModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "audio_waveforms.FinishMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FinishMode",
+                        "printedName": "audio_waveforms.FinishMode",
+                        "usr": "s:15audio_waveforms10FinishModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15audio_waveforms10FinishModeO5pauseyA2CmF",
+            "mangledName": "$s15audio_waveforms10FinishModeO5pauseyA2CmF",
+            "moduleName": "audio_waveforms",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "stop",
+            "printedName": "stop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(audio_waveforms.FinishMode.Type) -> audio_waveforms.FinishMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FinishMode",
+                    "printedName": "audio_waveforms.FinishMode",
+                    "usr": "s:15audio_waveforms10FinishModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "audio_waveforms.FinishMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FinishMode",
+                        "printedName": "audio_waveforms.FinishMode",
+                        "usr": "s:15audio_waveforms10FinishModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15audio_waveforms10FinishModeO4stopyA2CmF",
+            "mangledName": "$s15audio_waveforms10FinishModeO4stopyA2CmF",
+            "moduleName": "audio_waveforms",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "audio_waveforms.FinishMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FinishMode",
+                    "printedName": "audio_waveforms.FinishMode",
+                    "usr": "s:15audio_waveforms10FinishModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15audio_waveforms10FinishModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15audio_waveforms10FinishModeO8rawValueACSgSi_tcfc",
+            "moduleName": "audio_waveforms",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15audio_waveforms10FinishModeO8rawValueSivp",
+            "mangledName": "$s15audio_waveforms10FinishModeO8rawValueSivp",
+            "moduleName": "audio_waveforms",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15audio_waveforms10FinishModeO8rawValueSivg",
+                "mangledName": "$s15audio_waveforms10FinishModeO8rawValueSivg",
+                "moduleName": "audio_waveforms",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15audio_waveforms10FinishModeO",
+        "mangledName": "$s15audio_waveforms10FinishModeO",
+        "moduleName": "audio_waveforms",
+        "enumRawTypeName": "Int",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/AudioPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 117,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/AudioPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 158,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/AudioPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 39,
+      "length": 11,
+      "value": "\"audio_waveforms.AudioPlayer\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/AudioRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 194,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/SwiftAudioWaveformsPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 42,
+      "length": 25,
+      "value": "\"audio_waveforms.SwiftAudioWaveformsPlugin\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 107,
+      "length": 40,
+      "value": "\"simform_audio_waveforms_plugin\/methods\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
+      "length": 16,
+      "value": "\"AudioWaveforms\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 16,
+      "value": "\"startRecording\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 16,
+      "value": "\"pauseRecording\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 15,
+      "value": "\"stopRecording\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 12,
+      "value": "\"getDecibel\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 17,
+      "value": "\"checkPermission\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 6,
+      "value": "\"path\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 9,
+      "value": "\"encoder\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 12,
+      "value": "\"sampleRate\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 564,
+      "length": 9,
+      "value": "\"bitRate\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 606,
+      "length": 19,
+      "value": "\"YY-MM-dd-HH-mm-ss\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 659,
+      "length": 17,
+      "value": "\"resumeRecording\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 716,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 800,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 842,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 886,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 929,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 965,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1000,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1038,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1079,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1125,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1172,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 15,
+      "value": "\"readAudioFile\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1261,
+      "length": 22,
+      "value": "\"durationEventChannel\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1313,
+      "length": 13,
+      "value": "\"startPlayer\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1355,
+      "length": 12,
+      "value": "\"stopPlayer\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 13,
+      "value": "\"pausePlayer\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1435,
+      "length": 8,
+      "value": "\"seekTo\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 10,
+      "value": "\"progress\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 11,
+      "value": "\"setVolume\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1544,
+      "length": 8,
+      "value": "\"volume\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 13,
+      "value": "\"getDuration\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1626,
+      "length": 14,
+      "value": "\"durationType\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1672,
+      "length": 15,
+      "value": "\"preparePlayer\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1723,
+      "length": 19,
+      "value": "\"onCurrentDuration\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1768,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1805,
+      "length": 11,
+      "value": "\"playerKey\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1849,
+      "length": 16,
+      "value": "\"stopAllPlayers\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1907,
+      "length": 25,
+      "value": "\"onDidFinishPlayingAudio\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1961,
+      "length": 12,
+      "value": "\"finishMode\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2002,
+      "length": 12,
+      "value": "\"finishType\""
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2057,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2076,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2094,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2057,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2076,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2094,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2057,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2076,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yesersin\/Documents\/flutter\/.pub-cache\/hosted\/pub.dartlang.org\/audio_waveforms-0.1.5+1\/ios\/Classes\/Utils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2094,
+      "length": 1,
+      "value": "2"
+    }
+  ]
+}

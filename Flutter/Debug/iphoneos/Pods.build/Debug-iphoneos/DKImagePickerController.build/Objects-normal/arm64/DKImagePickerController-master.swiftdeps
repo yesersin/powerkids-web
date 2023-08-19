@@ -1,0 +1,41 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "8f8a1eeca0e975bbd4a79e3d96eac1b79b38fd26c6450357012f47e175bc5e75"
+build_start_time: [1680699634, 729807000]
+build_end_time: [1680699639, 664765000]
+inputs:
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageBaseManager.swift": [1680697475, 975709094]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageDataManager.swift": [1680697475, 974206639]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageGroupDataManager.swift": [1680697475, 974905417]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Export.swift": [1680697475, 977622939]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Fetch.swift": [1680697475, 979425483]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset.swift": [1680697475, 980007891]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAssetGroup.swift": [1680697475, 978455896]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImageAssetExporter.swift": [1680697475, 983534060]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImageExtensionController.swift"
+  : [1680697475, 982375086]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerController.swift"
+  : [1680697475, 984821024]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerControllerBaseUIDelegate.swift"
+  : [1680697475, 986187831]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKPopoverViewController.swift"
+  : [1680697475, 987641451]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/Resource/DKImagePickerControllerResource.swift"
+  : [1680697476, 66399044]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift"
+  : [1680697475, 994860609]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailBaseCell.swift"
+  : [1680697475, 995622676]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailCameraCell.swift"
+  : [1680697475, 993815565]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailImageCell.swift"
+  : [1680697475, 996563301]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailVideoCell.swift"
+  : [1680697475, 994291639]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupDetailVC.swift"
+  : [1680697475, 992699811]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupGridLayout.swift"
+  : [1680697475, 991781630]
+  ? "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupListVC.swift"
+  : [1680697475, 997888667]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKPermissionView.swift": [1680697475, 991070447]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/DKImagePickerController/Sources/Extensions/DKImageExtensionGallery.swift": [1680697475, 968834636]

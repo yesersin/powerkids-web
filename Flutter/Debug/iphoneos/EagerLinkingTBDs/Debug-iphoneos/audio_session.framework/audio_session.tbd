@@ -1,0 +1,10 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/audio_session.framework/audio_session'
+exports:
+  - targets:         [ arm64-ios ]
+    symbols:         [ _audio_sessionVersionNumber, _audio_sessionVersionString ]
+    objc-classes:    [ AudioSessionPlugin, DarwinAudioSession, PodsDummy_audio_session ]
+...

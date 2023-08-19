@@ -1,0 +1,36 @@
+import 'dart:convert';
+
+import 'package:com.powerkidsx/model/web_api/duyuru/duyuru_gelen.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:http/http.dart' as http;
+
+import '../../const/web_api/service_adres.dart';
+import '../../helper/web_api/is_status.dart';
+import '../../helper/web_api/post.dart';
+import '../../static/hata_mesaj.dart';
+
+Future<ModelDuyuruGelen?> getDuyurular({
+  required String okulId,
+  required String userId,
+  required String sinifId,
+  required String token,
+}) async {
+  http.Response? response = await postData(
+      adres: ServiceAdres().duyuruGetAll,
+      body: {"okulId": okulId, "sinifId": sinifId, "id": userId},
+      headers: {"x-access-token": token});
+  if (!isStatus(response)) {
+    //hata olmuş
+    var message = jsonDecode(response!.body);
+    hataMesaj = message["message"];
+    debugPrint("getDuyurular:" + message["message"]);
+    return null;
+  } else {
+    try {
+      return ModelDuyuruGelen.fromJson(jsonDecode(response!.body));
+    } catch (e) {
+      hataMesaj = "ModelDersProgram:modelde sorun oluştu!";
+    }
+    return null;
+  }
+}

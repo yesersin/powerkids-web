@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/yesersin/Sites/powerkids-v2/Flutter/Debug/iphoneos/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap \
+  /Users/yesersin/Sites/powerkids-v2/ios/Pods/Target\ Support\ Files/nanopb/nanopb-dummy.m \
+  /Users/yesersin/Sites/powerkids-v2/ios/Pods/Target\ Support\ Files/nanopb/nanopb-prefix.pch

@@ -1,0 +1,158 @@
+{
+  "project_info": {
+    "project_number": "1047764427243",
+    "project_id": "powerkids-app",
+    "storage_bucket": "powerkids-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047764427243:android:96ef793d803f2d0a61f9ae",
+        "android_client_info": {
+          "package_name": "com.example.powerkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdkmk_OJgeExEgQmgalgg_nzwuRN5iq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerkidsapp",
+                "app_store_id": "1435602243"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047764427243:android:10082b12c325773361f9ae",
+        "android_client_info": {
+          "package_name": "com.powerkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdkmk_OJgeExEgQmgalgg_nzwuRN5iq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerkidsapp",
+                "app_store_id": "1435602243"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047764427243:android:1a7e2606fa3d891061f9ae",
+        "android_client_info": {
+          "package_name": "com.powerkidsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdkmk_OJgeExEgQmgalgg_nzwuRN5iq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerkidsapp",
+                "app_store_id": "1435602243"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047764427243:android:aebfdda673a6b12361f9ae",
+        "android_client_info": {
+          "package_name": "com.powerkidsx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdkmk_OJgeExEgQmgalgg_nzwuRN5iq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047764427243-m30esp5ds3rg4fgce3fcvj9cihq821ri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047764427243-nj32dff7krgt51voptuu2hsk6rshrsa7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.powerkidsapp",
+                "app_store_id": "1435602243"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

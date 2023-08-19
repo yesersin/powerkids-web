@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "name": "powerkids-v2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "powerkids-v2 (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "powerkids-v2 (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter (Erkan Yeşersin iPhone’u)",
+            "program": "lib/main.dart",
+            "deviceId": "00008030-001640213AEB402E",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}

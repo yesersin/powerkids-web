@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "c6f376d379b08889641a840dea9d06b6394bd100bc2bb26e2799dd840a81ca26"
+build_start_time: [1680699619, 914277000]
+build_end_time: [1680699626, 749901000]
+inputs:
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/NSImage+SwiftyGif.swift": [1680697566, 857190524]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/NSImageView+SwiftyGif.swift": [1680697566, 859854169]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/ObjcAssociatedWeakObject.swift": [1680697566, 857621169]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/SwiftyGifManager.swift": [1680697566, 858993645]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/UIImage+SwiftyGif.swift": [1680697566, 858036558]
+  "/Users/yesersin/Sites/powerkids-v2/ios/Pods/SwiftyGif/SwiftyGif/UIImageView+SwiftyGif.swift": [1680697566, 856768139]

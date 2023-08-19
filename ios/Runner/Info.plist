@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Power Kids X</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>com.powerkidsapp</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>sms</string>
+		<string>tel</string>
+		<string>https</string>
+		<string>http</string>
+		<string>whatsapp</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Fotoğraf paylaşabilmeniz için gereklidir.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_dartobservatory._tcp</string>
+	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Okula varış sürenizi hesaplamak içindir.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Okul-Ev arasını hesaplayabilmek için gereklidir.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Okula varış sürenizi hesaplamak içindir.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Okula varış sürenizi hesaplamak içindir.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Ses kaydı göndermek içindir.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Fotoğraf paylaşımı yapabilmeniz için gereklidir.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Fotoğraf paylaşabilmeniz için gereklidir.</string>
+	<key>NSUserActivityTypes</key>
+	<string>INSendMessageIntent</string>
+	<key>PermissionGroupNotification</key>
+	<string>Bildirimleri görebilmeniz için gereklidir.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>Main.storyboard</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Fotoğraf paylaşabilmeniz için gereklidir.</string>
+</dict>
+</plist>
